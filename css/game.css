@@ -1,0 +1,32 @@
+.background    { background: rgb(52, 166, 251);
+                 background-image: linear-gradient(purple,orange);
+                 table-layout: fixed;
+                 border-spacing: 0;   }
+.background td { padding: 0;          }
+.lava          { background-image: url("./images/spikeball.png");}
+.wall          { background: rgb(84,84,84);   }
+
+.actor  { position: absolute;  }
+.flag   { background-image: url("./images/flag.png");}
+.player { background-image: url("./images/dude.png"); }
+
+.flip {background-image: url("./images/flip.png");}
+
+.end {background: rgb(160,32,250);}
+
+.barrel {background-image: url("./images/mine.png");}
+
+.game {
+  overflow: hidden;
+  max-width: 600px;
+  max-height: 450px;
+  position: relative;
+}
+
+.lost .player {
+  box-shadow: -4px -7px 8px red, 4px -7px 8px red;
+  background-image: url("./images/dude.png");
+}
+.won .player {
+  box-shadow: -4px -7px 8px white, 4px -7px 8px white;
+}
